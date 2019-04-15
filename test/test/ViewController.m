@@ -29,6 +29,10 @@
 
     [btn addTarget:self action:@selector(clickEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    UIImageView *imageV = [[UIImageView alloc] init];
+    imageV.backgroundColor = [UIColor redColor];
+    [self.view addSubview:imageV];
 }
 
 -(void)clickEvent:(UIButton *)sender {
