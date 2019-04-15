@@ -32,7 +32,8 @@
 }
 
 -(void)clickEvent:(UIButton *)sender {
-    NSLog(@"111111");
+    NSLog(@"ni");
+    NSLog(@"你大爷");
 }
 
 
