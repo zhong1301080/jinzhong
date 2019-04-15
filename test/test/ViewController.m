@@ -42,4 +42,8 @@
     NSLog(@"你大爷");
 }
 
+-(void)clickiEvent:(UIButton *)sender {
+    NSLog(@"==clicki====");
+}
+
 @end
