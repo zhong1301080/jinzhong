@@ -36,7 +36,7 @@
     lbl.backgroundColor = [UIColor redColor];
     [self.view addSubview:lbl];
     
-    NSLog(@"ssssss");
+    UIButton *btt = [[UIButton alloc] init];
 }
 
 -(void)clickEvent:(UIButton *)sender {
