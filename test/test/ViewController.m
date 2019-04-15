@@ -26,8 +26,12 @@
     [super viewWillAppear:animated];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     btn.backgroundColor = [UIColor redColor];
+<<<<<<< Updated upstream
 
     [btn addTarget:self action:@selector(clickEvent:) forControlEvents:UIControlEventTouchUpInside];
+=======
+    [btn addTarget:self action:@selector(clickiEvent:) forControlEvents:UIControlEventTouchUpInside];
+>>>>>>> Stashed changes
     [self.view addSubview:btn];
     
     UIImageView *imageV = [[UIImageView alloc] init];
@@ -40,6 +44,12 @@
     NSLog(@"你大爷");
 }
 
+<<<<<<< Updated upstream
 
+=======
+-(void)clickiEvent:(UIButton *)sender {
+    NSLog(@"==clicki====");
+}
+>>>>>>> Stashed changes
 
 @end
