@@ -35,6 +35,8 @@
     UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 120)];
     lbl.backgroundColor = [UIColor redColor];
     [self.view addSubview:lbl];
+    
+    NSLog(@"ssssss");
 }
 
 -(void)clickEvent:(UIButton *)sender {
