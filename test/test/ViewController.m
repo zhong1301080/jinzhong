@@ -26,6 +26,7 @@
     [super viewWillAppear:animated];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     btn.backgroundColor = [UIColor redColor];
+
     [btn addTarget:self action:@selector(clickEvent:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
@@ -33,4 +34,7 @@
 -(void)clickEvent:(UIButton *)sender {
     NSLog(@"111111");
 }
+
+
+
 @end
