@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface ViewController ()
 
@@ -37,6 +38,14 @@
     [self.view addSubview:lbl];
     
     UIButton *btt = [[UIButton alloc] init];
+    [btt addTarget:self action:@selector(bttEvent:) forControlEvents:UIControlEventTouchUpInside];
+    btt.backgroundColor = [UIColor redColor];
+    [btt setTitle:@"title" forState:UIControlStateNormal];
+    [self.view addSubview:btt];
+}
+
+-(void)bttEvent:(UIButton *)button {
+    NSLog(@"你好吗");
 }
 
 -(void)clickEvent:(UIButton *)sender {
